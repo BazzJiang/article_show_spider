@@ -27,7 +27,7 @@ def __connect_mysql_by_usr_pwd(username, password, database, host, port):
         exit(1)
 
 
-def get_pg_connection(db_config):
+def get_mysql_connection(db_config):
     """
     返回数据库连接
     :return:
@@ -51,4 +51,4 @@ if __name__ == '__main__':
         'host': 'rm-bp15wzk7gpro3c2d3lo.mysql.rds.aliyuncs.com',
         'port': '3306',
     }
-    get_pg_connection(db_config)
+    get_mysql_connection(db_config)
